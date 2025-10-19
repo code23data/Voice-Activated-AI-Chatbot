@@ -47,6 +47,7 @@ This is a Python-based voice assistant that processes voice commands to perform 
 
 ## File Structure
 - `main.py`: Main script containing the voice assistant logic.
+- `requirements.txt`: Contains the required libraries to run the script.
 - `notes.json`: Stores notes data.
 - `todos.json`: Stores to-do list data.
 
