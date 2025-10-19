@@ -46,7 +46,7 @@ This is a Python-based voice assistant that processes voice commands to perform 
 4. Say "stop", "quit", or "exit" to end the program.
 
 ## File Structure
-- `voice_assistant.py`: Main script containing the voice assistant logic.
+- `main.py`: Main script containing the voice assistant logic.
 - `notes.json`: Stores notes data.
 - `todos.json`: Stores to-do list data.
 
