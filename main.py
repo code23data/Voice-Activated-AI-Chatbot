@@ -83,7 +83,6 @@ def wishMe():
         It greets either good morning, good afternoon, or good evening
         based on the time of the day.
     """
-    # engine.say("I am not a human speaking.")
     currentTime = dt.datetime.now()
     print(f"The current time is: {currentTime}")
     if currentTime.hour < 12:
@@ -146,6 +145,7 @@ def openWebsite(website):
 
 
 def shutdown():
+    """Asks user for confirmation and then shuts down the device."""
     speak("Are you sure you want to shut down? (Say yes or no)")
     command = takeCommand().lower()
     if 'yes' in command:
@@ -160,6 +160,7 @@ def shutdown():
 
 
 def restart():
+    """Asks  user for confirmation and then restarts the device."""
     speak("Are you sure you want to restart? (Say yes or no)")
     command = takeCommand().lower()
     if 'yes' in command:
@@ -173,6 +174,7 @@ def restart():
             speak("Sorry, looks like I cannot restart your device because of your operating system.")
 
 def lock():
+    """Asks user for confirmation and then locks the device."""
     speak("Are you sure you want to lock the screen? (Say yes or no)")
     command = takeCommand().lower()
     if 'yes' in command:
@@ -262,7 +264,7 @@ def markTodoDone():
             return
     speak("Task not found.")
 
-
+# Running the chatbot as a script
 if __name__ == "__main__":
     load_data() # Load saved data
     wishMe()
